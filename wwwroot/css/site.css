@@ -1,0 +1,159 @@
+html {
+    font-size: 14px;
+    height: 100%;  margin: 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+    background: linear-gradient(to bottom right, #FFF5D1, #B4D2FE);
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+    body.contact-page {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 60px;
+        background: linear-gradient(to bottom right, #F8EBFF, #F1D6FF);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    body.projects-page {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 60px;
+        background: linear-gradient(to bottom right, #FF9393, #540000);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    body.resume-page {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 60px;
+        background: linear-gradient(to bottom right, #B8EDB8, #FFE9A6);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    body.about-page {
+        height: 100%;
+        margin: 0;
+        margin-bottom: 60px;
+        background: linear-gradient(to bottom right, #B4D2FE, #B8EDB8);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Black bar divider */
+.black-bar {
+    height: 5px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Section styling */
+.section-container {
+    width: 100vw;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Let it fill the width naturally without forcing 100vw */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem; /* slightly larger font */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.5rem; /* increases text size */
+    padding: 0.75rem 1.5rem; /* more click space */
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.download-cv-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #404040;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+}
+
+    .download-cv-btn:hover {
+        background-color: #000000; 
+    }
+
+    textarea::placeholder, input::placeholder {
+    color: #6c757d;
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+

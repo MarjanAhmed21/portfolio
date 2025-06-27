@@ -1,0 +1,130 @@
+﻿@page
+@model FirstWebApp.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+        <h1 class="display-4 fw-bold mb-5">Get In Touch</h1>
+        <p class="fs-4 w-75 mx-auto">Got a question? Want to discuss a project? Think I'm a potential employee for your company? Or you just want to say hello there? Drop a message below and I shall see it & respond as soon as possible!</p>
+    </div>
+
+    @if (Model.hasData)
+    {
+        <div class="alert alert-success">
+            <strong>Thanks, @Model.firstName @Model.lastName!</strong>
+            <p>Your message has been received:</p>
+            <blockquote>@Model.message</blockquote>
+        </div>
+    }
+
+    <form method="POST" class="p-4 bg-white rounded shadow-sm">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="text" name="firstName" class="form-control form-control-lg rounded-3" placeholder="First name" required />
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="lastName" class="form-control form-control-lg rounded-3" placeholder="Surname" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <input type="email" name="email" class="form-control form-control-lg rounded-3" placeholder="Email address" required />
+            </div>
+            <div class="col-md-6">
+                <input type="tel" name="phone" class="form-control form-control-lg rounded-3" placeholder="Contact number" />
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <textarea name="message" rows="6" class="form-control form-control-lg rounded-3" placeholder="Message" required></textarea>
+        </div>
+
+        <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+            <label class="form-check-label" for="privacyCheck">
+                I confirm I have read and agree with the Privacy Policy.
+            </label>
+        </div>
+
+
+        <div class="form-footer">
+            <button type="submit" class="send-button">Send message</button>
+        </div>
+
+    </form>
+</div>
+
+<!-- Black Divider -->
+<div class="black-bar"></div>
+
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <!-- Image Row -->
+    <div class="d-flex justify-content-center gap-4 mb-4">
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/marjan-ahmed-mashud/" target="_blank" class="image-button">
+            <img src="~/images/LinkedIn.png" alt="LinkedIn" class="shadow rounded-circle profile-icon" />
+        </a>
+
+        <!-- Mail Button -->
+        <a href="mailto:marjan14362@gamil.com" class="image-button">
+            <img src="~/images/Mail.png" alt="Email" class="shadow rounded-circle profile-icon" />
+        </a>
+
+        <!-- Github Button -->
+        <a href="https://github.com/MarjanAhmed21" target="_blank" class="image-button">
+            <img src="~/images/github.png" alt="Github" class="shadow rounded-circle profile-icon" />
+        </a>
+    </div>
+</div>
+
+<style>
+    .send-button {
+        background-color: #00C75E; /* green */
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        float: right; /* Position to bottom right of the form */
+        margin-top: 1rem;
+    }
+
+        .send-button:hover {
+            background-color: #008A42; /* dark green */
+        }
+
+        .send-button:active {
+            background-color: #007E3C; /* darker green */
+        }
+
+    /* Optional: clearfix to prevent float issues */
+    .form-footer::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .profile-icon {
+        max-width: 200px;
+        height: auto;
+        transition: filter 0.2s ease, transform 0.1s ease;
+    }
+
+    .image-button:hover .profile-icon {
+        filter: brightness(70%);
+    }
+
+    .image-button:active .profile-icon {
+        filter: brightness(40%);
+        transform: scale(0.98);
+    }
+</style>
+
+
+<body class="contact-page"></body>

@@ -1,0 +1,303 @@
+﻿@page
+@model Portfolio.Pages.ResumeModel
+@{
+    ViewData["Title"] = "Resume Page";
+}
+
+<!-- Hero Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <!-- Image Row -->
+    <div class="d-flex justify-content-center gap-4 mb-4">
+        <img src="~/images/Me2.png" alt="Profile Image" class="shadow rounded-circle" style="max-width: 200px; height: auto;" />
+        <img src="~/images/ResumePic.png" alt="Profile Image" class="shadow rounded-circle" style="max-width: 200px; height: auto;" />
+        <img src="~/images/Me3.png" alt="Profile Image" class="shadow rounded-circle" style="max-width: 200px; height: auto;" />
+    </div>
+
+    <h1 class="display-4 fw-bold mb-5">Resume</h1>
+</div>
+
+
+
+<!-- Qualifications Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5 text-start w-100 underline-heading">My Qualifications</h1>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4 w-100 skills-wrapper">
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Merit (2:1) - MSc Computer Games Development</p>
+            <div class="core-dropdown">
+                <p>Manchester Metropolitan University - 1 Year</p>
+                <p>Relevant Modules: Games Programming, Games User Research, The Games Industry, Rapid Games Prototyping, Games Studio</p>
+            </div>
+
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">1st Class Honours - BSc (Hons) Computer Games Development</p>
+            <div class="core-dropdown">
+                <p>Manchester Metropolitan University - 3 Years</p>
+                <p>Relevant Modules: Computer Systems Fundamentals, Algorithm & Data Structures, Programming, Intro to Web Design & Development, Computer Games Fundamentals, Computer Games Design, Computer Graphics, Professional Development, Advanced Computer Games Design, Advanced Computer Graphics, Advanced Games Development</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">D*D*D* - BTEC IT Level 3 Extended Diploma</p>
+            <div class="core-dropdown">Oldham Sixth Form College - 2 Year</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade 4 - GCSE English Language</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade 4 - GCSE English Literature</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade 4 - GCSE Mathematics</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade 5 - GCSE Art</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade 3 - GCSE Computer Studies</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade D - GCSE ICT</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value">Grade F - GCSE Product Design</p>
+            <div class="core-dropdown">The Radclyffe School</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Skills Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5 text-start w-100 underline-heading">Skills</h1>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4 w-100 skills-wrapper">
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">C# Programming</p>
+            <div class="core-dropdown">
+                <p>Great experience in using C#, proficiently used in all the games & applications I've developed. Learned how to use in developing since 1st year at University.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">.NET Developing</p>
+            <div class="core-dropdown">
+                <p>Solid experience in .NET developing, learned & used adequately during Web Designing & Programming modules throughout College then throughout my first year in University.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">ASP.NET Core</p>
+            <div class="core-dropdown">
+                <p>Exceptional experience in usage of ASP.NET Core, learned & used adequately during Programming modules throughout College, where I used the Visual Studio software to utilise its frameworks and develop applications, then throughout my first year in University I once again used it to further add to my experience of developing with ASP.Net Core.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">CSS</p>
+            <div class="core-dropdown">
+                <p>Good experience in using CSS, learned during Web Development modules in College & University. Ever since then, I have gradually imrpoved my skills & knowledge in using CSS.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">C++ Programming</p>
+            <div class="core-dropdown">
+                <p>Used in developing games on the Unreal Engine. I am continously striving to improve my usage in C++ as I continue to develop on Unreal Engine using C++ for scripting.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Game Designing</p>
+            <div class="core-dropdown">
+                <p>Studied 4 years of Computer Games Development, 3 years at Bachelor's level, followed by 1 year at Master's level. I have learned the principles of good game design through research on customer preference & developing games to satisfy their needs.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Game Developing</p>
+            <div class="core-dropdown">
+                <p>Studied 4 years of Computer Games Development, 3 years at Bachelor's level, followed by 1 year at Master's level. I have learned the principles of good game development through coomunication, time management, planning and developing with neccassary tools to keep game development cycles healthy.</p>
+            </div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Games/Bug Testing</p>
+            <div class="core-dropdown"> ALways test out the demos and games during development and even after building them so that I can search & locate for any bugs, errors or missing events. Any found will be taken note of and fixed for an improved build.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">JavaScript</p>
+            <div class="core-dropdown">Used to create and run scripts for the pages in websites I have created, I have come accustomed to using JavaScript efficiently to make things function properly when using the website. For example, I've used JavaScript for buttons clicked in these webpages like the dropdown boxes and the arrows for switching images in a slideshow format.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">HTML</p>
+            <div class="core-dropdown">Solid experience in using HTML, I was introduced to HTML during Web Development modules in College & University. Since then, I have steadily imrpoved my knowledge & techniques in using HTML.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Unity</p>
+            <div class="core-dropdown">This is my favourite application to use for developing & producing 2D/3D games and demos as it's what I'm experienced with the most, as seen in the many games I've developed using the Unity engine. Here, I have created many C# scripts and imported many assets like 3D models & textures/UI elements.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Blender</p>
+            <div class="core-dropdown">I have great experience using Blender for 3D modelling & editing, having relied on this greatly for the models I've edited and created to appear in my Unity games & demos. It's what I'm most confortable using for 3D modelling instead of using Maya or other software.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Aseprite</p>
+            <div class="core-dropdown">For all of my 2D games which include many sprites for things such as characters and buildings, I have utilised this great application since I was studying at college to assist me in creating 2D assets to use for my 2D games. I also use it for animating sprites such as the character animations for movement or idle animations.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">PowerPoint</p>
+            <div class="core-dropdown">Given that I am limited in my resources due to personal circumstances, I have always done beyond the best I can with the tools of PowerPoint to create Ui elements, graphic designed posters etc.</div>
+        </div>
+    </div>
+</div>
+
+<!-- Personal Skills Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5 text-end w-100 underline-heading">Personal Skills</h1>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4 w-100 skills-wrapper">
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Polite and respectfully mannered</p>
+            <div class="core-dropdown">Extremely essential for anyone to have, and I ensure my approach to communication and actions are polite & respectful in order to present myself as a friendly person to speak to and work well with.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Adaptive learner who's always looking to improve</p>
+            <div class="core-dropdown">Knowledge is the greatest thing a hard-working induvidual can gain, and I am always eager to further add to my set of knowledge so that I can be more versatile in my contributions to things.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Excellent punctuality</p>
+            <div class="core-dropdown">Attendance & being on time is really important to me. Ever since I was a child, I have always made it on time to every class or meeting scheduled thanks to the help of my parents. Now as an adult, I have matured and carried these same responsibilities to attend scheduled meetings and events in order to be seen as reliable to othewrs whenever I am called upon.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Never give up under pressure no matter the circumstances</p>
+            <div class="core-dropdown">Giving up and not moving on iss a bad attribute for anyone to have, so I always work hard to make sure I never get put into a place where I get these thoughts. I've been forced into many hardships and difficult circumstances and still managed to complete tasks & objectives to an exceptional degree, simply by never quitting nor giving up and losing my focus.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Enjoy working collaboratively</p>
+            <div class="core-dropdown">I am a very friendly induvidual who likes getting along with other people and creating positive bonds. It is only natural that I would be eager to work collaboratiely with peers and I have always enjoyed doing so. Teamwork is essential for any project to be tackled!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-3 core-value text-center">Exceptional IT skills</p>
+            <div class="core-dropdown">Working with technology & computers since I was really young, I have equipped good IT skills over the years and have only added & improved to my skillset continously since. I am extremely fond with computing & technology so it only makes sense that I'd be blessed with the exceptional IT skills I've worked hard for!</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDropdown(clickedElement) {
+        const allDropdowns = document.querySelectorAll('.core-dropdown');
+        const allCoreValues = document.querySelectorAll('.core-value');
+        const dropdown = clickedElement.querySelector('.core-dropdown');
+        const coreValue = clickedElement.querySelector('.core-value');
+        const isOpen = dropdown.classList.contains('show');
+
+        // Close all dropdowns and remove highlights
+        allDropdowns.forEach(el => el.classList.remove('show'));
+        allCoreValues.forEach(el => el.classList.remove('active'));
+
+        // Toggle current dropdown and highlight only if it was closed
+        if (!isOpen) {
+            dropdown.classList.add('show');
+            coreValue.classList.add('active');
+        }
+    }
+</script>
+
+
+
+
+<style>
+    .core-value {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        background-color: #33CC33;
+        color: white;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        margin: 0;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+        .core-value:hover,
+        .core-value.active {
+            background-color: orange;
+            transform: scale(1.05);
+        }
+
+    .core-dropdown {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        background-color: #fff3cd;
+        color: #333;
+        border-left: 4px solid orange;
+        margin-top: 0.5rem;
+        padding: 0 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        text-align: left;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .core-dropdown.show {
+            max-height: none;
+            opacity: 1;
+            padding: 0.75rem 1rem; /* restore padding when visible */
+        }
+
+    .core-value-box {
+        display: flex;
+        flex-direction: column;
+        width: 400px; /* fixed width */
+        margin-bottom: 2rem;
+    }
+
+    .skills-wrapper .core-value-box {
+        flex: 0 1 300px; /* Responsive width: each box is max 300px */
+        margin-bottom: 1rem;
+    }
+
+
+    .underline-heading {
+        text-decoration: underline;
+    }
+</style>
+
+<body class="resume-page"></body>
+

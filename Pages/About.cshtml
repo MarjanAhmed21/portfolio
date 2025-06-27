@@ -1,0 +1,250 @@
+﻿@page
+@model Portfolio.Pages.AboutModel
+@{
+    ViewData["Title"] = "About Page";
+}
+
+<!-- Hero Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <img src="~/images/Me.png" alt="Profile Image" class="mb-4 shadow rounded-circle" style="max-width: 200px; height: auto;" />
+    <h1 class="display-4 fw-bold mb-5">About Me</h1>
+    <p class="fs-4 w-75 mx-auto">Greetings, visitor! My name is Marjan Ahmed, and I'm just your friendly neighbour venturing through a journey just like everyone else.</p>
+    <p class="fs-4 w-75 mx-auto">Recently graduating from the Manchester Metropolitan University with a 2:1 (Merit) in MSc Computer Games Development, following an impressive 1st Class Honours in BSc Computer Games Development, I am absolutely passionate on developing many engaging & innovative games and applications that contribute nicely to our world. I am always eager to learn more and further improve my skills & experience!</p>
+</div>
+
+<!-- Biography Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5">Biography</h1>
+    <p class="fs-4 w-75 mx-auto">My journey in games & software development began at a young age when I became fascinated at the wonderful games I played and the engaging applications I enjoyed using in my day-to-day life. I became strongly inspired to pursue a dream career in creating games and software for everyone to use for fun or work. Throughout my studies dating back as early as college, I have worked on several projects to enhance my skills & experience in programming, problem-solving, and teamwork.</p>
+</div>
+
+<!-- Mission Statement Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5">Mission Statement</h1>
+    <p class="fs-4 w-75 mx-auto">My goal is to develop applications, software and games using my wide range of knowledge, skills, experience and dedication to provide a positive impact on all users. I am strongly dedicated to delivering on expectations and beyond, whilst also being eager to learn more and more as technology evolves!</p>
+</div>
+
+<!-- Black Divider -->
+<div class="black-bar"></div>
+
+<!-- Core Values Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5 text-start w-75 underline-heading">Core Values</h1>
+
+    <div class="text-start w-75 d-flex flex-column gap-3">
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Respect</p>
+            <div class="core-dropdown">I value respect highly and I give it to others as I would like that for myself. People around me are going through their own personal journeys too, it is only right that I respect them.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Morality</p>
+            <div class="core-dropdown">By instincts mixed with the way I've been raised by my parents, religion & ethnicity, I genuinely enjoy doing the right thing and helping others as the positive energy and happiness of my peers and those around me help push me forward with my head held up high and confident.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Learning</p>
+            <div class="core-dropdown">As aforementioned, I am always eager to improve my skills, experience and gain new knowledge to broaden my capabilities and qualities to contribute to duties & people.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Dedication</p>
+            <div class="core-dropdown">Mindset is important when it comes to getting a job done to an exceptional degree, and if I'm not dedicated to a task, my mindset would likely be poor and affect my way of completing my duties. When I am dedicated, I bring beyond the best in all my qualities!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Teamwork</p>
+            <div class="core-dropdown">Many tasks & jobs require more than 1 pair of hands, and when it comes to programming & developing, teamwork is valuable to ensure the best possible quality presented in the creation. My communication, gentle nature, friendliness & desire to help my peers keep on track makes teamwork a special core value of mine.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Time Management</p>
+            <div class="core-dropdown">Managing time is really importaant to me because it ensures I get more done in less time, it helps me stay focused on my goals instead of being distracted, it reduces stress and prevents me from being overwhelmed, and most importantly it gives me time to reflect on my personal development and learn. In software, application and game development, especially in team environments, being able to deliver on time & meet milestones shows that I'm' dependable.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Consumer Focused</p>
+            <div class="core-dropdown">Like I said, I want the games and applications I develop to contribute well to our world and positively effect people who may need to use them. Of course, to attract & engage the interest of users, I must go out and research what they like and prefer to ensure the games and applications are suitable for their use and helps them get through their daily lives and duties.</div>
+        </div>
+    </div>
+</div>
+
+<!-- Journey Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-end py-5">
+    <h1 class="display-4 fw-bold mb-5 text-end w-75 underline-heading">My Path</h1>
+    <div class ="w-75 text-start d-flex flex-column gap-3">
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+        <div class="core-value d-flex justify-content-between align-items-center">
+                <span class="text-start fs-5 fw-semibold">2023–2024</span>
+                <span class="text-end fs-5">MSc Computer Games Development - Manchester Metropolitan University</span>
+        </div>
+            <div class="core-dropdown text-end">Immediately after graduating with 1st Class Honours in a Bachelor's course, I made the decision to take on the next level and face a Master's course in Computer Games Development. Through many difficult situations & obstacles forced in my way, I worked extremely hard under pressure to complete this Master's degree. Here, I further improved my skills & experience in C# programming, software development & game designing/development. Even when being forced to go abroad during semester due to an emergency, I managed to complete assignments, granted extended deadline support from my tutor, and resumed progression through the rest of the year to complete my Master's course and achieve an impressive degree of a Merit (2:1)!</div>
+    </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <div class="core-value d-flex justify-content-between align-items-center">
+                <span class="text-start fs-5 fw-semibold">2020–2023</span>
+                <span class="text-end fs-5">BSc (Hons) Computer Games Development - Manchester Metropolitan University</span>
+            </div>
+            <div class="core-dropdown text-end">Enrolling into the MMU to face and take on a brand new challenge, I ventured through 3 solid years in studying a Bachelor's course in Computer Games Development. This is where I developed new skills in programming with .NET, JavaScript, C#, and designing with software like Blender & Aseprite to create my own models to use in the games I developed using Unity. I gained experience of what it could be like developing applications, websites and games for companies thanks to the challenging modules I faced here. Check out the games I developed in the "Projects" page to see what I created during my time studying this course. By the end of this 3 year Bachelor's course, I graduated with a well-earned degree of 1st Class Honours!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <div class="core-value d-flex justify-content-between align-items-center">
+                <span class="text-start fs-5 fw-semibold">2018–2020</span>
+                <span class="text-end fs-5">BTEC IT Level 3 Extended Diploma - Oldham Sixth Form College</span>
+            </div>
+            <div class="core-dropdown text-end">Successfully enrolling into OSFC in my hometown, I studied BTEC IT Level 3 Extended Diploma as I was absolutely fascinated with technology and designing games & applications. This course introduced me to many new features and skills that define my capabilities today. I learned how to program using many languages such as C#, JavaScript, .NET, html and more. My skills in time management & communication also improved here as the abundance of workload tranformed my work ethic from slow & standard-level to now more organised and exceptional higher goals I targeted. I owe many of my talents & experiences to this 2 year course I studied, as now I am able to program and develop applications & games using the skills equiped from this studious period and imrpoved later on in university. I achieved the top grade of Triple Distinction Stars (D*D*D*)!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <div class="core-value d-flex justify-content-between align-items-center">
+                <span class="text-start fs-5 fw-semibold">2013–2018</span>
+                <span class="text-end fs-5">GCSEs - The Radclyffe School</span>
+            </div>
+            <div class="core-dropdown text-end">Joining The Radclyffe School in 2013 due to it being local and the spot for many students to thrive and go on to better things in life, I studied various subjects to help shape me into a designer and developer in technology. I achieved a passing grade of a 4 in English Language, English Literature & Maths. I managed to achieve a grade 4-3 in Combined Science, and an impressive grade 5 in Art. Sadly, I underachieved with a grade 3 in ICT, a grade D in Computer Studies & a poor grade F in Product Design. This was due to a horrible situation taking place in January that year where I traveled to Bangladesh in an emergency for an entire month. My mental health was never the same for that academic year, but managing to enroll successfully to my dream college helped me move on.</div>
+        </div>
+    </div>
+</div>
+
+<!-- Hobbies & Interests Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5">
+    <h1 class="display-4 fw-bold mb-5 text-start w-75 underline-heading">My Hobbies & Interests</h1>
+    
+
+    <div class="text-start w-75 d-flex flex-column gap-3">
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Islam (Practicing my Religion)</p>
+            <div class="core-dropdown">Everything I've achieved is thanks to Islam and the strength, wisdom & peace I've gained from practicing this beautiful religion as I pray to God. The stress, pain & fear I've been put in my life have all been dealth with the right way through putting trust in God and prayling 5 times a day, as well as reading & reciting the Holy Quran to feel warmth and happiness inside my soul. As years go by, I feel closer to my religion.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Gaming</p>
+            <div class="core-dropdown">Ever since I was an infant, I've been in love with gaming. From the fun gameplay, the beautiful graphics & cinematic animation, and the amazing soundtracks have all engaged me strongly towards gaming. This is why I've decided to pursue a dream career in game development, hopefully with SEGAA as they own the greatest video game franchise of all time; Sonic The Hedgehog!! Gaming has also introduced me to developing applications & websites that are grab interest from users.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Gym</p>
+            <div class="core-dropdown">The source of my inspirational journey from an unhealthy, lazy kid to a reformed, hardworking & healthy man. I've been held back & bullied for my appearance and for the longest time I sat back thinking the negativity will naturally stop, but upon realising that I have to make a difference, the gym immediately welcomed me in to make that differencee. Now, my mindset regains & retains strength and peace through exercising in the gym.</div>
+        </div>
+
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Family Time</p>
+            <div class="core-dropdown">Strongly family-oriented, I've made it a main habit of doing everything alongside my brothers and parents. Always choosing to relax or go out with my family over being by myself or with my own friends, I remain strongly connected with my family through precious time spent with them. They've been here for me every second growing up when no one else wanted to even associate with me. I enjoy any & every moment with my family and want to ultimately give back to them by hopefully securing a well-paid job to continue funding for more special memories with my family.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Vlogging</p>
+            <div class="core-dropdown">Growing up watching youtube videos since I was a kid, I've been inspired by many vloggers to present the funniest, coolest & wholesome moments taking place in my life that I'd like to share with peers and friends. My phone is even stacked with hundreds of videos and pics taken to reminisce the good times I've been apart of and the remind me of how good life can be!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Video Editing</p>
+            <div class="core-dropdown">Since vlogging is a hobby of mine, it's only natural that I use video editing software to further enhance the viewing experience for myself and those I want to share my memories to. I enjoy adding background music that fits the context, filters that spice the footage, and transitions that beautifully blend multiple clips of engaging videos together. I guess you can say I really am inspired strongly by youtubers and the vlogging life!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Game Designing</p>
+            <div class="core-dropdown">Like I said, gaming is a strong hobby of mine, and growing up it's been a dream to pursue to professional job in game designing. I've had this as a hobby because I enjoy desigining things and creating technical interactive stuff based off my vision and what I want to see be used for entertainment & educational purposes. Nowadays, I even like designing games more than playing them!</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Football</p>
+            <div class="core-dropdown">Like I said, I want the games and applications I develop to contribute well to our world and positively effect people who may need to use them. Of course, to attract & engage the interest of users, I must go out and research what they like and prefer to ensure the games and applications are suitable for their use and helps them get through their daily lives and duties.</div>
+        </div>
+
+        <div class="core-value-box" onclick="toggleDropdown(this)">
+            <p class="fs-4 core-value">Listening to Music</p>
+            <div class="core-dropdown">Pretty much like many others, I enjoy listening to music to vibe nicely with their sounds and feel connected to the message & effect it gives. Whether it be soothing music to calm my nerves, or energtic songs to motivate me onwards for a task, I like listening to music that leaves a good impact on me.</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDropdown(clickedElement) {
+        const allDropdowns = document.querySelectorAll('.core-dropdown');
+        const allCoreValues = document.querySelectorAll('.core-value');
+        const dropdown = clickedElement.querySelector('.core-dropdown');
+        const coreValue = clickedElement.querySelector('.core-value');
+        const isOpen = dropdown.classList.contains('show');
+
+        // Close all dropdowns and remove highlights
+        allDropdowns.forEach(el => el.classList.remove('show'));
+        allCoreValues.forEach(el => el.classList.remove('active'));
+
+        // Toggle current dropdown and highlight only if it was closed
+        if (!isOpen) {
+            dropdown.classList.add('show');
+            coreValue.classList.add('active');
+        }
+    }
+</script>
+
+
+
+
+<style>
+    .core-value {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        background-color: #00B0F0;
+        color: white;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        margin: 0;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+
+        .core-value:hover {
+            background-color: orange;
+            transform: scale(1.05);
+        }
+
+        .core-value.active {
+            background-color: orange;
+            transform: scale(1.05);
+        }
+
+
+    .core-dropdown {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        background-color: #fff3cd;
+        color: #333;
+        border-left: 4px solid orange;
+        margin-top: 0.5rem;
+        padding: 0 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        text-align: left;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .core-dropdown.show {
+            max-height: 300px; 
+            opacity: 1;
+            padding: 0.75rem 1rem; /* restore padding when visible */
+        }
+
+
+    .core-value-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .underline-heading {
+        text-decoration: underline;
+    }
+
+</style>
+
+        
+<body class="about-page"></body>

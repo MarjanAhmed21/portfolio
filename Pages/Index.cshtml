@@ -1,0 +1,406 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center" style="height: 100vh;">
+    <h1 class="display-4 fw-bold">Welcome to Marjan's Portfolio</h1>
+    <p class="fs-4">Presenting my Projects, Skills & Ambitions.</p>
+</div>
+
+<!-- Black Divider -->
+<div class="black-bar"></div>
+
+<!-- Brief Introduction Section -->
+<div class="section-container">
+    <h2 class="section-heading">Introduction</h2>
+    <p class="section-text">
+        Welcome to my portfolio! I am a passionate developer equipped with a strong degree in Computer Games Development and a respectable amount of experience in programming & designing applications and games. Eager to work professionally and learn more to add to my skillset, I present to you this portfolio which showcases my journey, projects, and the tools I love working with!
+    </p>
+</div>
+
+<!-- Black Divider -->
+<div class="black-bar"></div>
+
+<!-- Skills Section -->
+<div class="section-container">
+    <h2 class="section-heading">Skills</h2>
+    <div class="skills-container">
+        <div class="skill-item">
+            <img src="~/images/csharpIcon.png" alt="C#">
+            <p>C#</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/HTMLIcon.png" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/cssIcon.png" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/javascriptIcon.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/aspdotnetcoreIcon.png" alt="ASP.NET Core">
+            <p>ASP.NET Core</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/dotnetIcon.png" alt=".NET Developing">
+            <p>.NET Developing</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/razoraspdotnetcoreIcon.png" alt="Razor Pages">
+            <p>Razor Pages</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/SQLIcon.png" alt="SQL">
+            <p>SQL</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/c++Icon.png" alt="C++">
+            <p>C++</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/gitIcon.png" alt="Git">
+            <p>Git</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/responsivedesignIcon.png" alt="Responsive Design">
+            <p>Responsive Design</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/gameprinciplesIcon.png" alt="Game Designing">
+            <p>Game Designing</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/UIprinciplesIcon.png" alt="UI Principles">
+            <p>UI Principles</p>
+        </div>
+    </div>
+</div>
+
+<!-- Black Divider -->
+<div class="black-bar"></div>
+
+<!-- Skills Section -->
+<div class="section-container">
+    <h2 class="section-heading">Applications Used</h2>
+    <div class="apps-container">
+        <div class="app-item">
+            <img src="~/images/unityIcon.png" alt="Unity">
+            <p>Unity</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/blenderIcon.png" alt="Blender">
+            <p>Blender</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/asepriteIcon.png" alt="Aseprite">
+            <p>Aseprite</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/powerpointIcon.png" alt="PowerPoint">
+            <p>PowerPoint</p>
+        </div>
+        <div class="skill-item">
+            <img src="~/images/githubIcon.png" alt="GitHub">
+            <p>GitHub</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/unrealIcon.png" alt="Unreal Engine">
+            <p>Unreal Engine</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/visualstudioIcon.png" alt="Visual Studio">
+            <p>Visual Studio</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/VScodeIcon.png" alt="VS Code">
+            <p>VS Code</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/excelIcon.png" alt="Excel">
+            <p>Excel</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/wordIcon.png" alt="Word">
+            <p>Word</p>
+        </div>
+        <div class="app-item">
+            <img src="~/images/googledocsIcon.png" alt="Google Docs">
+            <p>Google Docs</p>
+        </div>
+    </div>
+</div>
+
+<!-- Black Divider -->
+<div class="black-bar"></div>
+
+<!-- Proudest Projects Section -->
+<div class="section-container">
+    <h2 class="section-heading">Proudest Projects</h2>
+    <div class="project-grid-container">
+    <!-- 3D School Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+            <button class="carousel-arrow left-arrow" onclick="changeImage(this, -1)">&#10094;</button>
+
+            <img class="project-image mb-3" src="@Url.Content("~/images/3DSchool2.png")" alt="3D School Game Demo" />
+
+            <button class="carousel-arrow right-arrow" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+
+        <h3 class="fw-bold">3D School Demo</h3>
+        <p>Developed a 3D interactive demo based on secondary school showcasing subjects to tackle and complete minigames to the best of the player’s abilities.</p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/3d-school-demo-download" target="_blank" rel="noopener noreferrer">
+                Go to project website for DOWNLOAD
+            </a>
+        </p>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ Developing & producing a 3D game</li>
+                <li>✅ Adding UI elements onto canvas effectively</li>
+                <li>✅ Scene transitions</li>
+                <li>✅ Loading screen implementing</li>
+                <li>✅ Splines implementing</li>
+                <li>✅ Scrollbars</li>
+                <li>✅ Learning new C# techniques</li>
+            </ul>
+        </div>
+    </div>
+
+        <!-- 2D School Game Project Card -->
+        <div class="project-card mx-auto my-5 p-4 text-center">
+            <div class="carousel-container position-relative">
+                <button class="carousel-arrow left-arrow" onclick="changeImage(this, -1)">&#10094;</button>
+
+                <img class="project-image mb-3" src="@Url.Content("~/images/2DSchool1.png")" alt="2D School Game Demo" />
+
+                <button class="carousel-arrow right-arrow" onclick="changeImage(this, 1)">&#10095;</button>
+            </div>
+
+            <h3 class="fw-bold">2D School Demo</h3>
+            <p>Developed a 2D interactive demo based on secondary school showcasing subjects to tackle and complete minigames to the best of the player’s abilities.</p>
+            <p>
+                <a href="https://marjanahmed21.itch.io/school-based-quiz-game" target="_blank" rel="noopener noreferrer">
+                    Visit the project website
+                </a>
+            </p>
+            <a href="~/downloads/School-based Quiz Game.zip" class="btn btn-primary mt-3" download>Download Game</a>
+            <!-- Experience Gained Toggle Button -->
+            <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+                Experience Gained
+            </button>
+
+            <!-- Dropdown Content (hidden by default) -->
+            <div class="experience-dropdown mt-2" style="display: none;">
+                <ul class="list-unstyled">
+                    <li>✅ Adding UI elements onto canvas effectively</li>
+                    <li>✅ Scene transitions</li>
+                    <li>✅ Score counter</li>
+                    <li>✅ Sprite designing & animating</li>
+                    <li>✅ C# skills improved</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="fs-4 w-75 mx-auto">Check out the Projects page to see more of my creations I've developed!</p>
+
+    </div>
+</div>
+
+<style>
+    .project-card {
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 300px;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .project-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+        align-items: flex-start; /* Prevent equal height cards */
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0 0.5rem;
+        z-index: 1;
+        border-radius: 0.3rem;
+        color: #333;
+    }
+
+    .left-arrow {
+        left: 0.5rem;
+    }
+
+    .right-arrow {
+        right: 0.5rem;
+    }
+
+    .experience-dropdown {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        color: #333;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        text-align: center;
+    }
+
+        .skill-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-item p {
+            font-size: 1.1rem; /* Smaller than default */
+            margin: 0;
+        }
+
+    .apps-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .app-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        text-align: center;
+    }
+
+        .app-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-item p {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+</style>
+
+@{
+    var imageSetsJson = System.Text.Json.JsonSerializer.Serialize(new Dictionary<int, List<string>> {
+        { 0, new List<string> {
+            Url.Content("~/images/3DSchool1.png"),
+            Url.Content("~/images/3DSchool3.png"),
+            Url.Content("~/images/3DSchool4.png"),
+            Url.Content("~/images/3DSchool2.png")
+        }},
+        { 1, new List<string> {
+            Url.Content("~/images/2DSchool2.png"),
+            Url.Content("~/images/2DSchool3.png"),
+            Url.Content("~/images/2DSchool1.png")
+        }}
+    });
+}
+
+
+<script>
+    const imageSets = @Html.Raw(imageSetsJson);
+
+    const currentIndexes = {};
+
+    function changeImage(button, direction) {
+        const container = button.closest('.carousel-container');
+        const img = container.querySelector('img');
+        const projectIndex = [...document.querySelectorAll('.carousel-container')].indexOf(container);
+
+        if (!currentIndexes[projectIndex]) currentIndexes[projectIndex] = 0;
+
+        const images = imageSets[projectIndex];
+        if (!images) return;
+
+        currentIndexes[projectIndex] = (currentIndexes[projectIndex] + direction + images.length) % images.length;
+        img.src = images[currentIndexes[projectIndex]];
+    }
+
+        function toggleExperience(button) {
+        const card = button.closest('.project-card');
+        const dropdown = card.querySelector('.experience-dropdown');
+        const isVisible = dropdown.style.display === 'block';
+
+        dropdown.style.display = isVisible ? 'none' : 'block';
+
+        if (isVisible) {
+            button.classList.remove('btn-warning');
+            button.classList.add('btn-success');
+            button.textContent = 'Experience Gained';
+        } else {
+            button.classList.remove('btn-success');
+            button.classList.add('btn-warning');
+            button.textContent = 'Hide Experience';
+        }
+    }
+</script>
+
+
+
+
+
+

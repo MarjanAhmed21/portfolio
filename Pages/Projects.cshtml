@@ -1,0 +1,381 @@
+﻿@page
+@model Portfolio.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Projects Page";
+}
+
+<!-- Top Section -->
+<div class="d-flex justify-content-center align-items-center flex-column text-center py-5 text-white">
+    <img src="~/images/ProjectsAvi.png" alt="Profile Image" class="mb-4 shadow rounded-circle" style="max-width: 200px; height: auto;" />
+    <h1 class="display-4 fw-bold mb-5">My Projects</h1>
+    <p class="fs-4 w-75 mx-auto">Have a stroll around with my projects to see some of my proudest works & some of the concepts I had going. ALL games are available for download!</p>
+</div>
+
+<!-- Container for all cards -->
+<div class="project-grid-container">
+
+<!-- 3D School Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+            <button class="carousel-arrow left-arrow" onclick="changeImage(this, -1)">&#10094;</button>
+
+            <img class="project-image mb-3" src="@Url.Content("~/images/3DSchool2.png")" alt="3D School Game Demo" />
+
+            <button class="carousel-arrow right-arrow" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+
+    <h3 class="fw-bold">3D School Demo</h3>
+    <p>Developed a 3D interactive demo based on secondary school showcasing subjects to tackle and complete minigames to the best of the player’s abilities.</p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/3d-school-demo-download" target="_blank" rel="noopener noreferrer">
+                Go to project website for DOWNLOAD
+            </a>
+        </p>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ Developing & producing a 3D game</li>
+                <li>✅ Adding UI elements onto canvas effectively</li>
+                <li>✅ Scene transitions</li>
+                <li>✅ Loading screen implementing</li>
+                <li>✅ Splines implementing</li>
+                <li>✅ Scrollbars</li>
+                <li>✅ Learning new C# techniques</li>
+            </ul>
+        </div>
+</div>
+
+    <!-- 2D School Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+            <button class="carousel-arrow left-arrow" onclick="changeImage(this, -1)">&#10094;</button>
+
+            <img class="project-image mb-3" src="@Url.Content("~/images/2DSchool1.png")" alt="2D School Game Demo" />
+
+            <button class="carousel-arrow right-arrow" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+
+        <h3 class="fw-bold">2D School Demo</h3>
+        <p>Developed a 2D interactive demo based on secondary school showcasing subjects to tackle and complete minigames to the best of the player’s abilities.</p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/school-based-quiz-game" target="_blank" rel="noopener noreferrer">
+                Visit the project website
+            </a>
+        </p>
+        <a href="~/downloads/School-based Quiz Game.zip" class="btn btn-primary mt-3" download>Download Game</a>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ Adding UI elements onto canvas effectively</li>
+                <li>✅ Scene transitions</li>
+                <li>✅ Score counter</li>
+                <li>✅ Sprite designing & animating</li>
+                <li>✅ C# skills improved</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- Geometry Spawning Shooter Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+            <button class="carousel-arrow left-arrow" onclick="changeImage(this, -1)">&#10094;</button>
+
+            <img class="project-image mb-3" src="@Url.Content("~/images/SpawnShoot2.png")" alt="Geometry Spawning Shooter Game Demo" />
+
+            <button class="carousel-arrow right-arrow" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+
+        <h3 class="fw-bold">Geometry Spawning Shooter Game</h3>
+        <p>
+            Developed a 2D shooter inspired demo where the player must avoid musical notes and collect enough rings to unlock a gun to
+            shoot the enemy until they are defeated and the player completes the level.
+        </p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/geometry-spawning-shooter-game-20020202" target="_blank" rel="noopener noreferrer">
+                Visit the project website
+            </a>
+        </p>
+        <a href="~/downloads/Geometry Spawn Shoot Demo.zip" class="btn btn-primary mt-3" download>Download Game</a>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ Spawning objects into scenes</li>
+                <li>✅ Learning & implementing prefabs</li>
+                <li>✅ Removing objects out of scene depending on collisions</li>
+                <li>✅ Scene transitions</li>
+                <li>✅ Increasing & decreasing integers</li>
+                <li>✅ Sprite animation using Animator & Animator Controller</li>
+                <li>✅ Learning & improving C# knowledge</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Portfolio Card -->
+    <div class="project-card mx-auto my-5 p-4">
+        <div class="carousel-container position-relative">
+            <button class="carousel-arrow left-arrow" onclick="changeImage(this, -1)">&#10094;</button>
+
+            <img class="project-image mb-3" src="@Url.Content("~/images/Webpage1.png")" alt="Portfolio Website" />
+
+            <button class="carousel-arrow right-arrow" onclick="changeImage(this, 1)">&#10095;</button>
+        </div>
+        <h3 class="fw-bold">My Portfolio Website (THIS)</h3>
+        <p>Develped this portfolio website using ASP.NET Core Web App (Razor Pages) as the template to use and build this clear and user-friendly portfolio website to showcase my background, my resume & my projects for potential employers to view and consider my candidacy!</p>
+    </div>
+
+<!-- Pinball Demo Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+            
+            <img class="project-image mb-3" src="@Url.Content("~/images/PinballGame.png")" alt="Pinball Game Demo" />
+    </div>
+
+        <h3 class="fw-bold">Pinball Tech Demo</h3>
+        <p>
+            Developed a 3D pinball demo where players must use the spacebar to ping a ball u[wards and manage it to reach the goal ring,
+            before time runs out.
+        </p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/indirect-control-pinball" target="_blank" rel="noopener noreferrer">
+                Visit the project website
+            </a>
+        </p>
+        <a href="~/downloads/Pinball Demo.zip" class="btn btn-primary mt-3" download>Download Game</a>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ First ever Unity game developed</li>
+                <li>✅ Becoming accustomed to basic Unity features</li>
+                <li>✅ Creating & implementing C# scripts</li>
+                <li>✅ Slider bar progress update</li>
+                <li>✅ Collider trigger events</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mapping Demo Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+         
+            <img class="project-image mb-3" src="@Url.Content("~/images/Mapping.png")" alt="Mapping Game Demo" />
+    </div>
+
+        <h3 class="fw-bold">Mapping Demo</h3>
+        <p>
+            Developed a 2D platformer demo where the player must use the tools in the inventory on the UI screen to help explore around the level to collect a certain number of items to unlock the cage to the goal ring.
+        </p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/mapping-demo-20020202" target="_blank" rel="noopener noreferrer">
+                Visit the project website
+            </a>
+        </p>
+        <a href="~/downloads/Mapping Demo.zip" class="btn btn-primary mt-3" download>Download Game</a>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ Implementing sprites & 2D assets</li>
+                <li>✅ Animating sprites</li>
+                <li>✅ Developing & implementing jumping and falling mechanic</li>
+                <li>✅ Implementing score counter</li>
+                <li>✅ Learning & enhancing C# techniques</li>
+                <li>✅ Adding physical elements in the level through dragging UI images into it</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Traitor Demo Game Project Card -->
+    <div class="project-card mx-auto my-5 p-4 text-center">
+        <div class="carousel-container position-relative">
+
+            <img class="project-image mb-3" src="@Url.Content("~/images/TraitorDemo.png")" alt="Traitor Game Demo" />
+        </div>
+
+        <h3 class="fw-bold">Traitor Short Demo</h3>
+        <p>
+            Developed a short 2D Mystery themed game where the player locates for clues to solve a mystery.
+        </p>
+        <p>
+            <a href="https://marjanahmed21.itch.io/2d-traitor-short-demo" target="_blank" rel="noopener noreferrer">
+                Visit the project website
+            </a>
+        </p>
+        <a href="~/downloads/2D Traitor Demo Game.zip" class="btn btn-primary mt-3" download>Download Game</a>
+        <!-- Experience Gained Toggle Button -->
+        <button class="btn btn-success mt-3 toggle-experience" onclick="toggleExperience(this)">
+            Experience Gained
+        </button>
+
+        <!-- Dropdown Content (hidden by default) -->
+        <div class="experience-dropdown mt-2" style="display: none;">
+            <ul class="list-unstyled">
+                <li>✅ First ever 2D platformer game I've developed</li>
+                <li>✅ Implementing sprites & 2D assets</li>
+                <li>✅ Animating sprites</li>
+                <li>✅ Implementing collision event triggers</li>
+                <li>✅ Implementing scene transitions</li>
+                <li>✅ Learning & enhancing C# techniques</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+    .project-card {
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 300px;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .project-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: flex-start; /* Prevent equal height cards */
+    }
+
+    .project-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0 0.5rem;
+        z-index: 1;
+        border-radius: 0.3rem;
+        color: #333;
+    }
+
+    .left-arrow {
+        left: 0.5rem;
+    }
+
+    .right-arrow {
+        right: 0.5rem;
+    }
+
+    .experience-dropdown {
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        color: #333;
+    }
+
+
+
+</style>
+
+@{
+    var imageSetsJson = System.Text.Json.JsonSerializer.Serialize(new Dictionary<int, List<string>> {
+        { 0, new List<string> {
+            Url.Content("~/images/3DSchool1.png"),
+            Url.Content("~/images/3DSchool3.png"),
+            Url.Content("~/images/3DSchool4.png"),
+            Url.Content("~/images/3DSchool2.png")
+        }},
+        { 1, new List<string> {
+            Url.Content("~/images/2DSchool2.png"),
+            Url.Content("~/images/2DSchool3.png"),
+            Url.Content("~/images/2DSchool1.png")
+        }},
+        { 2, new List<string> {
+            Url.Content("~/images/SpawnShoot1.png"),
+            Url.Content("~/images/SpawnShoot3.png"),
+            Url.Content("~/images/SpawnShoot2.png")
+        }},
+        { 3, new List<string> {
+            Url.Content("~/images/Webpage2.png"),
+            Url.Content("~/images/Webpage3.png"),
+            Url.Content("~/images/Webpage1.png")
+        }}
+    });
+}
+
+
+<script>
+    const imageSets = @Html.Raw(imageSetsJson);
+
+    const currentIndexes = {};
+
+    function changeImage(button, direction) {
+        const container = button.closest('.carousel-container');
+        const img = container.querySelector('img');
+        const projectIndex = [...document.querySelectorAll('.carousel-container')].indexOf(container);
+
+        if (!currentIndexes[projectIndex]) currentIndexes[projectIndex] = 0;
+
+        const images = imageSets[projectIndex];
+        if (!images) return;
+
+        currentIndexes[projectIndex] = (currentIndexes[projectIndex] + direction + images.length) % images.length;
+        img.src = images[currentIndexes[projectIndex]];
+    }
+
+        function toggleExperience(button) {
+        const card = button.closest('.project-card');
+        const dropdown = card.querySelector('.experience-dropdown');
+        const isVisible = dropdown.style.display === 'block';
+
+        dropdown.style.display = isVisible ? 'none' : 'block';
+
+        if (isVisible) {
+            button.classList.remove('btn-warning');
+            button.classList.add('btn-success');
+            button.textContent = 'Experience Gained';
+        } else {
+            button.classList.remove('btn-success');
+            button.classList.add('btn-warning');
+            button.textContent = 'Hide Experience';
+        }
+    }
+</script>
+
+
+
+<body class="projects-page"></body>
