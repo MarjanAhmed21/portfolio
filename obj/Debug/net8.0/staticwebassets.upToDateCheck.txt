@@ -17,11 +17,14 @@ wwwroot\images\asepriteIcon.png
 wwwroot\images\aspdotnetcoreIcon.png
 wwwroot\images\blenderIcon.png
 wwwroot\images\c++Icon.png
+wwwroot\images\commandlineIcon.PNG
+wwwroot\images\commandpromptIcon.png
 wwwroot\images\csharpIcon.png
 wwwroot\images\cssIcon.png
 wwwroot\images\dotnetIcon.png
 wwwroot\images\excelIcon.png
 wwwroot\images\gameprinciplesIcon.png
+wwwroot\images\gitbashIcon.png
 wwwroot\images\github.png
 wwwroot\images\githubIcon.png
 wwwroot\images\gitIcon.png
@@ -37,6 +40,7 @@ wwwroot\images\Me2.png
 wwwroot\images\Me3.png
 wwwroot\images\PinballGame.png
 wwwroot\images\powerpointIcon.png
+wwwroot\images\powershellIcon.png
 wwwroot\images\ProjectsAvi.png
 wwwroot\images\razoraspdotnetcoreIcon.png
 wwwroot\images\responsivedesignIcon.png
