@@ -17,6 +17,7 @@ wwwroot\images\asepriteIcon.png
 wwwroot\images\aspdotnetcoreIcon.png
 wwwroot\images\blenderIcon.png
 wwwroot\images\c++Icon.png
+wwwroot\images\commandlineIcon.PNG
 wwwroot\images\commandpromptIcon.png
 wwwroot\images\csharpIcon.png
 wwwroot\images\cssIcon.png
@@ -116,4 +117,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\images\commandlineIcon.PNG
