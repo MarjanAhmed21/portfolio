@@ -1,6 +1,5 @@
 wwwroot\css\site.css
 wwwroot\downloads\2D Traitor Demo Game.zip
-wwwroot\downloads\CV - Marjan Ahmed Mashud.pdf
 wwwroot\downloads\Geometry Spawn Shoot Demo.zip
 wwwroot\downloads\Mapping Demo.zip
 wwwroot\downloads\Pinball Demo.zip
@@ -117,3 +116,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\downloads\CV - Marjan Ahmed Mashud.pdf
