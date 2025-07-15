@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\marja\\source\\repos\\portfolioapplication\\pages\\resume.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:pages\\resume.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\marja\\source\\repos\\portfolioapplication\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|c:\\users\\marja\\source\\repos\\portfolioapplication\\pages\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D22C5090-2E42-7CF5-DFCE-2717F9F4F06F}|Portfolio.csproj|solutionrelative:pages\\projects.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,32 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAmwLcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAmwKsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-27T21:30:05.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Projects.cshtml",
               "DocumentMoniker": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\Projects.cshtml",
               "RelativeDocumentMoniker": "Pages\\Projects.cshtml",
               "ToolTip": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\Projects.cshtml",
               "RelativeToolTip": "Pages\\Projects.cshtml",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAmwFIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-27T21:01:44.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "Pages\\About.cshtml",
+              "ToolTip": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\About.cshtml",
+              "RelativeToolTip": "Pages\\About.cshtml",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T14:37:35.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Resume.cshtml",
+              "DocumentMoniker": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\Resume.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Resume.cshtml",
+              "ToolTip": "C:\\Users\\marja\\source\\repos\\PortfolioApplication\\Pages\\Resume.cshtml",
+              "RelativeToolTip": "Pages\\Resume.cshtml",
+              "ViewState": "AgIAACwBAAAAAAAAAAAiwDgBAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-15T14:28:31.788Z",
               "EditorCaption": ""
             }
           ]
